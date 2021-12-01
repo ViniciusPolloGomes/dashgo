@@ -47,6 +47,6 @@ The easiest way to deploy your Next.js app is to use the [Vercel Platform](https
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
 
 #Comandos de criação.
-yarn create next-app dashgo
-yarn add typescript @types/react @types/node -D
-yarn add @chakra-ui/react @chakra-ui/core @emotion/react @emotion/styled framer-motion   
+Yarn create next-app dashgo
+Yarn add typescript @types/react @types/node -D
+Yarn add @chakra-ui/react @chakra-ui/core @emotion/react @emotion/styled framer-motion   
