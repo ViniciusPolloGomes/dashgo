@@ -5,21 +5,20 @@ export function Header(){
     return(
         <Flex
             as="header"
-            w="100%"   //largura
-            maxWidth={1480}
+            maxWidth={1480} 
+            w="100%" 
             h="20"     //horizontal
-            mx="4"     //margin horizontal
+                        //margin horizontal
             mt="4"     //margin top
             px="6"     //padding horizontal
-            align="center"
+            align="center"  
+            justify="space-around"     
         >
             <Text 
                 fontSize="3xl"
                 fontWeight="bold"
                 letterSpacing="tight"
-                w="64"
             >
-
                 DashGo
                 <Text as="span" ml="1" color="pink.500">.</Text>
             </Text>
@@ -28,33 +27,32 @@ export function Header(){
                 flex="1"
                 py="4"      //Padding Vertical 1rem or16px 
                 px="8"      //padding horizontal
-                ml="6"      //margin left
-                mr="auto"
                 maxWidth={400}
                 alignSelf="center"
                 color="gray.200"
                 position="relative"
                 bg="gray.800"
                 borderRadius="full"
+                minWidth={300}
             >    
                 <Input 
                     color="gray.50"
                     variant="unstyled"
                     px="4"
                     mr="4"
+                    minWidth={200}
                     placeholder="Buscar na plataforma"
                     _placeholder={{color: 'gray.400'}}
 
                 />
-            <Icon as={RiSearchLine}/>
+                <Icon as={RiSearchLine} fontSize="20"/>
             </Flex>
             <Flex
                 align="center"
-                mk="auto"
             >
                 <HStack
                     spacing="4"
-                    mx="8"
+                    pl="2"
                     pr="8"
                     py="1"
                     color="gray.300"
@@ -66,23 +64,24 @@ export function Header(){
                 </HStack>
                 <Flex
                     align="center"
+                    ml="8"
                 >
                     <Box
-                        mr="4"
+                        
                         textAlign="right"
                     >
-                        <Text>Vinicius Pollo</Text>
+                        <Text>Vinicius </Text>
                         <Text
                             color="gray.300"
                             fontSize="small"
                         >
-                            ViniciusPolloGomes@gmail.com
+                            Vinicius@gmail.com
                         </Text>    
                     </Box>
                     <Avatar
                         size="md"
                         name="Vinicius Pollo"
-                        src="https://avatars.githubusercontent.com/u/55021733?s=40&v=4"
+                        src="ttps://avatars.githubusercontent.com/u/55021733?s=40&v=4"
                     >
                     </Avatar>
                 </Flex>
