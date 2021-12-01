@@ -1,14 +1,14 @@
-#Construindo Interfaces Do Futuro
+## Construindo Interfaces Do Futuro
 
 Nesse Projeto foi criado interfaces de um painel administrativo contendo fluxo de autenticação, dashboard, listagem e cadastro usando CHAKRA UI no Next.js
 
-#CHAKRA UI 
+## CHAKRA UI 
 Chakra UI é uma biblioteca de componentes simples, modular e acessível que fornece os blocos de construção de que você precisa para construir seus aplicativos React.
 
-#React.js
+## React.js
 React é uma biblioteca JavaScript para criar interfaces de usuário.
 
-#Next.js
+## Next.js
 É uma Estrutura React para Produção(FrameWork React), Next.js oferece a melhor experiência de desenvolvedor com todos os recursos de que você precisa para produção: renderização híbrida estática e de servidor, suporte a TypeScript, agrupamento inteligente, pré-busca de rota e muito mais. Nenhuma configuração necessária.
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
@@ -46,7 +46,10 @@ The easiest way to deploy your Next.js app is to use the [Vercel Platform](https
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
 
-#Comandos de criação.
-yarn create next-app dashgo
-yarn add typescript @types/react @types/node -D
-yarn add @chakra-ui/react @chakra-ui/core @emotion/react @emotion/styled framer-motion   
+## Comandos de criação
+
+Yarn create next-app dashgo
+
+Yarn add typescript @types/react @types/node -D
+
+Yarn add @chakra-ui/react @chakra-ui/core @emotion/react @emotion/styled framer-motion   
