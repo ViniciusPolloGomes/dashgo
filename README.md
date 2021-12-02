@@ -1,15 +1,20 @@
 ## Construindo Interfaces Do Futuro
 
-Nesse Projeto foi criado interfaces de um painel administrativo contendo fluxo de autenticação, dashboard, listagem e cadastro usando CHAKRA UI no Next.js
+Nesse Projeto foi criado interfaces de um painel administrativo contendo fluxo de autenticação, dashboard, listagem e cadastro usando CHAKRA UI no Next.js e ApexCharts.js
 
 ## CHAKRA UI 
-Chakra UI é uma biblioteca de componentes simples, modular e acessível que fornece os blocos de construção de que você precisa para construir seus aplicativos React.
+[Chakra UI](https://chakra-ui.com/) é uma biblioteca de componentes simples, modular e acessível que fornece os blocos de construção de que você precisa para construir seus aplicativos React.
+
+## ApexCharts.Js
+Gráficos de código aberto moderno e interativos. [ApexCharts](https://apexcharts.com/) é uma biblioteca de gráficos moderna que ajuda os desenvolvedores a criar visualizações bonitas e interativas para páginas da web.
+
+É um projeto de código aberto licenciado pelo MIT e seu uso é gratuito em aplicativos comerciais.
 
 ## React.js
-React é uma biblioteca JavaScript para criar interfaces de usuário.
+[React](https://pt-br.reactjs.org/) é uma biblioteca JavaScript para criar interfaces de usuário.
 
 ## Next.js
-É uma Estrutura React para Produção(FrameWork React), Next.js oferece a melhor experiência de desenvolvedor com todos os recursos de que você precisa para produção: renderização híbrida estática e de servidor, suporte a TypeScript, agrupamento inteligente, pré-busca de rota e muito mais. Nenhuma configuração necessária.
+É uma Estrutura React para Produção(FrameWork para React), [Next.js](https://nextjs.org/) oferece a melhor experiência de desenvolvedor com todos os recursos de que você precisa para produção: renderização híbrida estática e de servidor, suporte a TypeScript, agrupamento inteligente, pré-busca de rota e muito mais. Nenhuma configuração necessária.
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
@@ -52,4 +57,6 @@ Yarn create next-app dashgo
 
 Yarn add typescript @types/react @types/node -D
 
-Yarn add @chakra-ui/react @chakra-ui/core @emotion/react @emotion/styled framer-motion   
+Yarn add @chakra-ui/react @chakra-ui/core @emotion/react @emotion/styled framer-motion  
+
+Yarn add apexcharts react-apexcharts

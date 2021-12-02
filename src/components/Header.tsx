@@ -8,16 +8,18 @@ export function Header(){
             maxWidth={1480} 
             w="100%" 
             h="20"     //horizontal
-                        //margin horizontal
+            mx="auto"           //margin horizontal
             mt="4"     //margin top
             px="6"     //padding horizontal
             align="center"  
-            justify="space-around"     
+                 
         >
             <Text 
                 fontSize="3xl"
                 fontWeight="bold"
                 letterSpacing="tight"
+                w="64"
+                
             >
                 DashGo
                 <Text as="span" ml="1" color="pink.500">.</Text>
@@ -27,6 +29,7 @@ export function Header(){
                 flex="1"
                 py="4"      //Padding Vertical 1rem or16px 
                 px="8"      //padding horizontal
+                ml="8"
                 maxWidth={400}
                 alignSelf="center"
                 color="gray.200"
@@ -49,6 +52,7 @@ export function Header(){
             </Flex>
             <Flex
                 align="center"
+                ml="auto"
             >
                 <HStack
                     spacing="4"
@@ -67,7 +71,7 @@ export function Header(){
                     ml="8"
                 >
                     <Box
-                        
+                        mx="4"
                         textAlign="right"
                     >
                         <Text>Vinicius </Text>
@@ -81,7 +85,7 @@ export function Header(){
                     <Avatar
                         size="md"
                         name="Vinicius Pollo"
-                        src="ttps://avatars.githubusercontent.com/u/55021733?s=40&v=4"
+                        src="https://avatars.githubusercontent.com/u/55021733?s=40&v=4"
                     >
                     </Avatar>
                 </Flex>
