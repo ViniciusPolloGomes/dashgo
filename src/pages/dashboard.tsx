@@ -78,13 +78,13 @@ export function DashBoard (){
             >
                 <SideBar/>
 
-                <SimpleGrid flex="1" gap="4" minChildWidth={["320","320px"]} align="flex-start" spacing="4">
+                <SimpleGrid flex="1" gap="4" minChildWidth={["320px","320px","320px"]} align="flex-start" m={["8","8","0"]}>
                     <Box p={["4","8"]}  bg="gray.800" borderRadius={8} pb="4">
-                        <Text fontSize={["xl","lg"]} mb="4">Inscritos da Semana</Text>
+                        <Text fontSize={["2xl","2xl","lg"]} mb="4">Inscritos da Semana</Text>
                     <Chart options={options} series={series} type="area" height={160} />
                     </Box>
                     <Box p={["4","8"]}  bg="gray.800" borderRadius={8}>
-                        <Text fontSize={["xl","lg"]} mb="4">Taxa de abertura</Text>
+                        <Text fontSize={["2xl","2xl","lg"]} mb="4">Taxa de abertura</Text>
                         <Chart options={options} series={series} type="area" height={160} />
                     </Box>
                 </SimpleGrid>

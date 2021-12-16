@@ -4,9 +4,9 @@ import { Input } from './Form/Input';
 export function SignIn(){
     return(
         <Flex
-            w="100%vw"
-            h="100%vh"
-            align="center"
+            w="100vw"
+            h="100vh"
+            alignItems="center"
             justify="center"
          >
             <Flex 
@@ -16,7 +16,7 @@ export function SignIn(){
                 bg="gray.800"
                 p="8"
                 borderRadius={8}
-                flexDir="column"
+                flexDirection="column"
             >
                 <Stack spacing="4">
                     <Input name="email" type="email" label="E-mail"/>
