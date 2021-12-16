@@ -4,8 +4,8 @@ import { Input } from './Form/Input';
 export function SignIn(){
     return(
         <Flex
-            w="100vw"
-            h="100vh"
+            w="100%vw"
+            h="100%vh"
             align="center"
             justify="center"
          >

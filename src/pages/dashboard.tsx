@@ -1,14 +1,14 @@
 import {Header} from '../components/Header';
 import {Flex, SimpleGrid, Box, Text,theme} from '@chakra-ui/react'
 import { SideBar } from '../components/SideBar';
-
+import {Props} from 'react-apexcharts'
 import dynamic from 'next/dynamic';
 
 const Chart = dynamic(()=> import('react-apexcharts'), {
     ssr:false,
 })
 
-const options={
+const options: Props ={
     chart:{
         toolbar:{
             show:false,
@@ -65,25 +65,26 @@ export function DashBoard (){
 
 
     return(
-        <Flex direction="column" h="100vh">
+        <Flex direction="column" h="100vh" w="100vw">
             <Header/>
  
             <Flex 
-                w="100%" 
+                w={["100%","100%"]}
+                h={["auto","auto"]}
                 my="6" 
-                maxWidth={1480} 
-                mx="auto" 
-                px="6"
+                maxWidth={1200}
+                mx={["4","auto"]} 
+                px={["4","6"]}
             >
                 <SideBar/>
 
-                <SimpleGrid flex="1" gap="4" minChildWidth="320px" align="flex-start">
-                    <Box p="8"  bg="gray.800" borderRadius={8} pb="4">
-                        <Text fontSize="lg" mb="4">Inscritos da Semana</Text>
+                <SimpleGrid flex="1" gap="4" minChildWidth={["320","320px"]} align="flex-start" spacing="4">
+                    <Box p={["4","8"]}  bg="gray.800" borderRadius={8} pb="4">
+                        <Text fontSize={["xl","lg"]} mb="4">Inscritos da Semana</Text>
                     <Chart options={options} series={series} type="area" height={160} />
                     </Box>
-                    <Box p="8"  bg="gray.800" borderRadius={8}>
-                        <Text fontSize="lg" mb="4">Taxa de abertura</Text>
+                    <Box p={["4","8"]}  bg="gray.800" borderRadius={8}>
+                        <Text fontSize={["xl","lg"]} mb="4">Taxa de abertura</Text>
                         <Chart options={options} series={series} type="area" height={160} />
                     </Box>
                 </SimpleGrid>

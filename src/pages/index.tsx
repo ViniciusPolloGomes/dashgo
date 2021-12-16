@@ -1,12 +1,8 @@
-import {SignIn} from '../components/SignIn'
-import {Header} from '../components/Header'
-import { Flex } from '@chakra-ui/react'
-import { DashBoard } from './dashboard';
+
+import { DashBoard } from './dashBoard';
 
 export default function Home() {
   return (
-    <>
       <DashBoard/>
-    </>
   )
 }
