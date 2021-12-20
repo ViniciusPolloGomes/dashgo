@@ -1,5 +1,5 @@
 
-import { DashBoard } from './dashBoard';
+import { DashBoard } from './dashboard';
 
 export default function Home() {
   return (

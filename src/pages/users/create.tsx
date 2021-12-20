@@ -1,10 +1,9 @@
 
 import{Box,Flex,Heading,Divider,VStack,SimpleGrid,HStack,Button,useBreakpointValue} from '@chakra-ui/react'
 import { Input } from '../../components/Form/Input';
-
 import { Header } from '../../components/Header';
-
 import { SideBar } from '../../components/SideBar';
+import Link from 'next/link';
 
 export default function UserList(){
     const isWideVersion = useBreakpointValue({
@@ -38,7 +37,9 @@ export default function UserList(){
                     <Divider my={["6","6"]}  borderColor="gray.700"/>
                     <Flex mt={["2","8"]} justify={["center","flex-end"]}>
                         <HStack spacing="4" >
-                            <Button colorScheme="whiteAlpha">Cancelar</Button>
+                            <Link href="/users" passHref>
+                                <Button as="a" colorScheme="whiteAlpha">Cancelar</Button>
+                            </Link>
                             <Button colorScheme="pink">Salvar</Button>
                         </HStack>
                     </Flex>

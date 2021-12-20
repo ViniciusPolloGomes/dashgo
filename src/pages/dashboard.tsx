@@ -61,7 +61,7 @@ const series = [
 ];
 
 
-export function DashBoard (){
+export default function DashBoard (){
 
 
     return(
