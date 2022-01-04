@@ -10,6 +10,22 @@ Gráficos de código aberto moderno e interativos. [ApexCharts](https://apexchar
 
 É um projeto de código aberto licenciado pelo MIT e seu uso é gratuito em aplicativos comerciais.
 
+## React-hook-form
+Formulário [React-Hook-Form](https://react-hook-form.com/) - Validação de formulários React simples.
+Formulários eficientes, flexíveis e extensíveis com validação fácil de usar.
+
+Pode ser usado Unform também.
+
+## Yup
+
+[Yup](https://github.com/jquense/yup/blob/master/README.md) é um construtor de esquema para análise e validação de valor de tempo de execução. Defina um esquema, transforme um valor para corresponder, afirme a forma de um valor existente ou ambos. Os esquemas Yup são extremamente expressivos e permitem modelar validações complexas e interdependentes ou transformação de valor.
+
+Interface de esquema concisa, porém expressiva, equipada para modelar modelos de dados simples a complexos.
+Suporte poderoso para TypeScript. Inferir tipos estáticos do esquema ou garantir que o esquema implemente corretamente um tipo.
+Suporte de validação assíncrona integrado. Modelar a validação do lado do servidor e do lado do cliente igualmente bem.
+Extensível: adicione seus próprios métodos e esquema de segurança de tipo.
+Ricos detalhes de erro, facilite a depuração.
+
 ## React.js
 [React](https://pt-br.reactjs.org/) é uma biblioteca JavaScript para criar interfaces de usuário.
 
@@ -60,3 +76,9 @@ Yarn add typescript @types/react @types/node -D
 Yarn add @chakra-ui/react @chakra-ui/core @emotion/react @emotion/styled framer-motion  
 
 Yarn add apexcharts react-apexcharts
+
+Yarn add react-hook-form 
+
+Ao instalar o yup no projeto você utiliza o comando @hookform/resolvers para fazer [integração do Yup com o react-hook-form](https://react-hook-form.com/get-started#SchemaValidation).
+
+Yarn add yup @hookform/resolvers

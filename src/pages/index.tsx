@@ -1,10 +1,11 @@
 
-import { DashBoard } from './dashboard';
+import SignIn  from './signin';
+import  DashBoard  from './dashboard';
 
 export default function Home() {
   return (
 
-      <DashBoard/>
+    <SignIn/>  
 
   );
 }
