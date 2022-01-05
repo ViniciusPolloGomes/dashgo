@@ -62,7 +62,7 @@ export default function SignIn(){
                         {...register('password')}
                     />
                 </Stack>
-                <Button type="submit" mt="6" colorScheme="pink" size="lg"  isLoading={formState.isSubmitting}>
+                <Button type="submit" mt="6" colorScheme="pink" size="lg"  isLoading={formState.isSubmitting} >
                     Entrar
                 </Button> 
             </Flex>
