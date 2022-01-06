@@ -26,6 +26,18 @@ Suporte de validação assíncrona integrado. Modelar a validação do lado do s
 Extensível: adicione seus próprios métodos e esquema de segurança de tipo.
 Ricos detalhes de erro, facilite a depuração.
 
+## MirageJs
+[Mirage JS](https://miragejs.com/) é uma biblioteca de simulação de API que permite construir, testar e compartilhar um aplicativo JavaScript funcional completo sem ter que depender de nenhum serviço de back-end.
+
+Uso atualmente para testar em tempo real front-end sem depender de um backend pronto, ou seja, o trabalho fica concentrado no front-end e pronto para entrega e integração com backend original.
+
+## Faker
+Gera dados ficticios em massa para sua aplicação ajudando no processo de teste e criação.
+
+## ReactQuery
+Sincronização de dados eficiente e poderosa para React
+Busque, armazene em cache e atualize dados em seus aplicativos React e React Native, tudo sem tocar em nenhum "estado global".[Home Page](https://react-query.tanstack.com/)
+
 ## React.js
 [React](https://pt-br.reactjs.org/) é uma biblioteca JavaScript para criar interfaces de usuário.
 
@@ -98,3 +110,11 @@ Yarn add react-hook-form
 Ao instalar o yup no projeto você utiliza o comando @hookform/resolvers para fazer [integração do Yup com o react-hook-form](https://react-hook-form.com/get-started#SchemaValidation).
 
 Yarn add yup @hookform/resolvers
+
+Yarn add miragejs -D
+
+Yarn add faker -D
+
+Yarn add @types/faker -D
+
+Yarn add react-query

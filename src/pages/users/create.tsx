@@ -4,7 +4,7 @@ import { Input } from '../../components/Form/Input';
 import { Header } from '../../components/Header';
 import { SideBar } from '../../components/SideBar';
 
-import {FieldValues, FormState, SubmitHandler , useForm} from 'react-hook-form'
+import {SubmitHandler , useForm} from 'react-hook-form'
 import Link from 'next/link';
 import * as yup from 'yup';
 import {yupResolver} from '@hookform/resolvers/yup'
