@@ -1,6 +1,6 @@
 import {createServer,Factory, Model} from 'miragejs'
 import faker from 'faker';
-import routes from 'next/router'
+
 type User={
     name: string;
     email: string;
@@ -29,7 +29,7 @@ export function makeServer(){
         },
         
         seeds(server){ //criar dados assim que servidor for iniciado
-            server.createList('User',200);
+            server.createList('user',10);
         },
 
         routes(){
