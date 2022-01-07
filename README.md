@@ -98,13 +98,13 @@ Split HTML Attributes (Bue,React, Angular).
 Vscode-styled components
 
 ## Temas abordados no projeto.
-##Configurando PROJETO
+## Configurando PROJETO
 -Interface declarativa.
 -Criando projeto Next.js.
 -Configurando Chakra UI.
 -Configurando fonte.
 
-##Login e DashBoard.
+## Login e DashBoard.
 -Página: Sign in.
 -Componente: Input.
 -Criando Header.
@@ -112,11 +112,11 @@ Vscode-styled components
 -Componente: Sidebar.
 -Página: Dashboard.
 
-Controle de usuários
+## Controle de usuários
 -Página: Lista de usuários.
 -Componente: Pagination.
 -Página: Form de usuário.
-##Responsividade
+## Responsividade
 -Separando componentes.
 -Responsividade no Chakra.
 -Header responsivo.
@@ -127,7 +127,7 @@ Controle de usuários
 -Fluxo de navegação.
 -Sinalizando link ativo.
 
-##Formulario e validação
+## Formulario e validação
 -Formulários no React.
 -Atualização React Hook Form.
 -Form de autenticação.
@@ -135,7 +135,7 @@ Controle de usuários
 -Form de criação de usuário.
 -Encerramento do módulo.
 
-##Data fetching no React
+## Data fetching no React
 -Configurando MirageJS.
 -Factories e seeds.
 -Configurando React Query.
