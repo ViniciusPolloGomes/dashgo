@@ -1,6 +1,8 @@
 ## Construindo Interfaces Do Futuro
 
-Nesse Projeto foi criado interfaces de um painel administrativo contendo fluxo de autenticação, dashboard, listagem e cadastro usando CHAKRA UI no Next.js e ApexCharts.js
+Nesse Projeto foi criado interfaces de um painel administrativo contendo fluxo de autenticação,yup para validação, dashboard, listagem e cadastro usando CHAKRA UI no Next.js e ApexCharts.js para geração de graficos, react-hook-forms para formulários, usei miragejs para simular backend juntamente com faker para geração de dados ficticios, react-query para armazenamento chache e sincronização de dados.
+
+Para mais detalhes leia mais informações abaixo.
 
 ## CHAKRA UI 
 [Chakra UI](https://chakra-ui.com/) é uma biblioteca de componentes simples, modular e acessível que fornece os blocos de construção de que você precisa para construir seus aplicativos React.
@@ -139,7 +141,9 @@ Data fetching no React
 -Factories e seeds.
 -Configurando React Query.
 -Listagem de usuários.
--Configurando DevTools.
+-Configurando DevTools.  
+
+sera atualizada essa lista conforme estou desenvolvendo..
 
 ## Comandos de criação e instalações de pacotes no projeto.
 
