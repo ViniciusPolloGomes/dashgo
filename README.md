@@ -82,20 +82,20 @@ The easiest way to deploy your Next.js app is to use the [Vercel Platform](https
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
 
 ## Extensions visual code
-Auto Import.
-Auto Import - ES6,TS,JSX,TSX.
-Bracket Pair Colorizer.
-CSS Modules.
-Dracula Official.
-Emoji Snippets.
-HTML Preview.
-HTML Snippets.
-Jason test plugin.
-Material Icon Theme.
-Nuget Package Manager.
-Path Intellisense.
-Split HTML Attributes (Bue,React, Angular).
-Vscode-styled components
+- Auto Import.
+- Auto Import - ES6,TS,JSX,TSX.
+- Bracket Pair Colorizer.
+- CSS Modules.
+- Dracula Official.
+- Emoji Snippets.
+- HTML Preview.
+- HTML Snippets.
+- Jason test plugin.
+- Material Icon Theme.
+- Nuget Package Manager.
+- Path Intellisense.
+- Split HTML Attributes (Bue,React, Angular).
+- Vscode-styled components
 
 ## Temas abordados no projeto.
 ## Configurando PROJETO
