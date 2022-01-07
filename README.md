@@ -99,48 +99,48 @@ Vscode-styled components
 
 ## Temas abordados no projeto.
 ## Configurando PROJETO
--Interface declarativa.
--Criando projeto Next.js.
--Configurando Chakra UI.
--Configurando fonte.
+- Interface declarativa.
+- Criando projeto Next.js.
+- Configurando Chakra UI.
+- Configurando fonte.
 
 ## Login e DashBoard.
--Página: Sign in.
--Componente: Input.
--Criando Header.
--Finalizando Header.
--Componente: Sidebar.
--Página: Dashboard.
+- Página: Sign in.
+- Componente: Input.
+- Criando Header.
+- Finalizando Header.
+- Componente: Sidebar.
+- Página: Dashboard.
 
 ## Controle de usuários
--Página: Lista de usuários.
--Componente: Pagination.
--Página: Form de usuário.
+- Página: Lista de usuários.
+- Componente: Pagination.
+- Página: Form de usuário.
 ## Responsividade
--Separando componentes.
--Responsividade no Chakra.
--Header responsivo.
--Sidebar responsiva.
--Dashboard responsivo.
--Listagem responsiva.
--Cadastro responsivo.
--Fluxo de navegação.
--Sinalizando link ativo.
+- Separando componentes.
+- Responsividade no Chakra.
+- Header responsivo.
+- Sidebar responsiva.
+- Dashboard responsivo.
+- Listagem responsiva.
+- Cadastro responsivo.
+- Fluxo de navegação.
+- Sinalizando link ativo.
 
 ## Formulario e validação
--Formulários no React.
--Atualização React Hook Form.
--Form de autenticação.
--Validação dos dados.
--Form de criação de usuário.
--Encerramento do módulo.
+- Formulários no React.
+- Atualização React Hook Form.
+- Form de autenticação.
+- Validação dos dados.
+- Form de criação de usuário.
+- Encerramento do módulo.
 
 ## Data fetching no React
--Configurando MirageJS.
--Factories e seeds.
--Configurando React Query.
--Listagem de usuários.
--Configurando DevTools.  
+- Configurando MirageJS.
+- Factories e seeds.
+- Configurando React Query.
+- Listagem de usuários.
+- Configurando DevTools.  
 
 sera atualizada essa lista conforme estou desenvolvendo..
 
