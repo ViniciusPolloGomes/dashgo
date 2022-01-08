@@ -1,4 +1,4 @@
-## Construindo Interfaces Do Futuro
+# Construindo Interfaces Do Futuro
 
 Nesse Projeto foi criado interfaces de um painel administrativo contendo fluxo de autenticação,yup para validação, dashboard, listagem e cadastro usando CHAKRA UI no Next.js e ApexCharts.js para geração de graficos, react-hook-forms para formulários, usei miragejs para simular backend juntamente com faker para geração de dados ficticios, react-query para armazenamento chache e sincronização de dados.
 
@@ -38,7 +38,20 @@ Gera dados ficticios em massa para sua aplicação ajudando no processo de teste
 
 ## ReactQuery
 Sincronização de dados eficiente e poderosa para React
-Busque, armazene em cache e atualize dados em seus aplicativos React e React Native, tudo sem tocar em nenhum "estado global".[Home Page](https://react-query.tanstack.com/)
+Busque, armazene em cache e atualize dados em seus aplicativos React e React Native, tudo sem tocar em nenhum "estado global".[Home Page](https://react-query.tanstack.com/).
+
+APRIMORAMENTO DA FERRAMENTA DEVTOOLS PARA REACT QUERY. [DOCUMENTAÇÃO](https://react-query.tanstack.com/devtools).
+
+#### O React Query substitui Redux, MobX ou outros gerenciadores de estado globais?
+Bem, vamos começar com alguns itens importantes:
+
+React Query é uma biblioteca de estado do servidor(*server-state libary*) , responsável por gerenciar operações assíncronas entre seu **servidor e cliente**
+Redux, MobX, Zustand, etc. são bibliotecas de estado do cliente que podem ser usadas para armazenar dados assíncronos, embora **ineficientemente quando comparados a uma ferramenta como React Query**
+Com esses pontos em mente, a resposta curta é que o **React Query substitui** o código clichê e a fiação relacionada usada para gerenciar dados de cache em seu estado de cliente e os **substitui por apenas algumas linhas de código**.
+
+Para a grande maioria dos aplicativos, o estado do cliente verdadeiramente acessível globalmente que sobra após a migração de todo o seu código assíncrono para React Query é geralmente muito pequeno.
+
+[Documentação](https://react-query.tanstack.com/guides/does-this-replace-client-state).
 
 ## React.js
 [React](https://pt-br.reactjs.org/) é uma biblioteca JavaScript para criar interfaces de usuário.
@@ -98,13 +111,13 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 - Vscode-styled components
 
 ## Temas abordados no projeto.
-## Configurando PROJETO
+#### Configurando PROJETO
 - Interface declarativa.
 - Criando projeto Next.js.
 - Configurando Chakra UI.
 - Configurando fonte.
 
-## Login e DashBoard.
+#### Login e DashBoard.
 - Página: Sign in.
 - Componente: Input.
 - Criando Header.
@@ -112,11 +125,11 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 - Componente: Sidebar.
 - Página: Dashboard.
 
-## Controle de usuários
+#### Controle de usuários
 - Página: Lista de usuários.
 - Componente: Pagination.
 - Página: Form de usuário.
-## Responsividade
+#### Responsividade
 - Separando componentes.
 - Responsividade no Chakra.
 - Header responsivo.
@@ -127,7 +140,7 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 - Fluxo de navegação.
 - Sinalizando link ativo.
 
-## Formulario e validação
+#### Formulario e validação
 - Formulários no React.
 - Atualização React Hook Form.
 - Form de autenticação.
@@ -135,7 +148,7 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 - Form de criação de usuário.
 - Encerramento do módulo.
 
-## Data fetching no React
+#### Data fetching no React
 - Configurando MirageJS.
 - Factories e seeds.
 - Configurando React Query.
@@ -144,7 +157,7 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 
 sera atualizada essa lista conforme estou desenvolvendo..
 
-## Comandos de criação e instalações de pacotes no projeto.
+#### Comandos de criação e instalações de pacotes no projeto.
 
 Yarn create next-app dashgo
 
