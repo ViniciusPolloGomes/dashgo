@@ -55,7 +55,7 @@ Para a grande maioria dos aplicativos, o estado do cliente verdadeiramente acess
 
 ## Axios
 O que é [Axios](https://axios-http.com/docs/intro)?.
-[Axios](https://axios-http.com/docs/intro) é um cliente HTTP baseado em promessa para node.jse o navegador. É isomórfico (= pode ser executado no navegador e no nodejs com a mesma base de código). No lado do servidor, ele usa o httpmódulo node.js nativo , enquanto no cliente (navegador) ele usa XMLHttpRequests.
+[Axios](https://axios-http.com/docs/intro) é um cliente HTTP baseado em promessa para node.js e o navegador. É isomórfico (= pode ser executado no navegador e no nodejs com a mesma base de código). No lado do servidor, ele usa o httpmódulo node.js nativo , enquanto no cliente (navegador) ele usa XMLHttpRequests.
 
 #### COM FETCH
 ```tsx
