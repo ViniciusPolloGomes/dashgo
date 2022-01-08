@@ -7,13 +7,19 @@ import { SideBar } from '../../components/SideBar';
 import Link from 'next/link';
 
 import {useQuery} from 'react-query'
+import { api } from '../../services/api';
 
 
 export default function UserList(){
 
-    const {data,isLoading,error} = useQuery('users', async ()=>{            //criar a chave exige o nome para salvar no cache onde irar salvar, e o método
-        const response = await  fetch('http://localhost:3000/api/users')
-        const data = await response.json()
+    const {data,isLoading, isFetching, error} = useQuery('users', async ()=>{            //criar a chave exige o nome para salvar no cache onde irar salvar, e o método
+        
+        // COM FETCH
+        // const response = await  fetch('http://localhost:3000/api/users')
+        //const data = await response.json()
+
+        //COM AXIOS
+        const {data} = await api.get('users')
 
         const users = data.users.map(user => {
             return{
@@ -45,7 +51,11 @@ export default function UserList(){
                  <SideBar/>
                  <Box flex="1" borderRadius={8} bg="gray.800" p={["4","8"]}>
                      <Flex mb="8" justify="space-between" align="center">
-                        <Heading size="lg" fontWeight="normal">Usuários</Heading>
+                        <Heading size="lg" fontWeight="normal">
+                            Usuários
+
+                            {!isLoading && isFetching && <Spinner size="sm"  color="gray.500" ml="4" />}
+                        </Heading>
                         <Link href="/users/create" passHref>
                             <Button as="a"
                             size="sm"

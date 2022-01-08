@@ -53,6 +53,31 @@ Para a grande maioria dos aplicativos, o estado do cliente verdadeiramente acess
 
 [Documentação](https://react-query.tanstack.com/guides/does-this-replace-client-state).
 
+## Axios
+O que é [Axios](https://axios-http.com/docs/intro)?
+[Axios](https://axios-http.com/docs/intro) é um cliente HTTP baseado em promessa para node.jse o navegador. É isomórfico (= pode ser executado no navegador e no nodejs com a mesma base de código). No lado do servidor, ele usa o httpmódulo node.js nativo , enquanto no cliente (navegador) ele usa XMLHttpRequests.
+
+        #### COM FETCH
+```tsx
+                const response = await  fetch('http://localhost:3000/api/users')
+                const data = await response.json()
+```
+        #### COM AXIOS
+```tsx
+                const {data} = await api.get('users')
+```
+        Porém precisa configurar o axios em um arquivo services/api.ts
+```tsx
+                import axios from 'axios';
+
+                export const api = axios.create({
+                    baseURL: 'http://localhost:3000/api'
+                })
+```
+
+#### Motivo por qual estou usando.
+Estou usando o axios no lugar do fetch devido algumas vantagens, umas delas, é poder usar uma URL base , pra que todas as requisições partam de um endereço inicial,um prefixo no endereço.
+
 ## React.js
 [React](https://pt-br.reactjs.org/) é uma biblioteca JavaScript para criar interfaces de usuário.
 
@@ -155,6 +180,9 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 - Listagem de usuários.
 - Configurando DevTools.  
 
+#### Construindo aplicação
+- Sinalizando refetch dos dados
+
 sera atualizada essa lista conforme estou desenvolvendo..
 
 #### Comandos de criação e instalações de pacotes no projeto.
@@ -180,3 +208,5 @@ Yarn add faker -D
 Yarn add @types/faker -D
 
 Yarn add react-query
+
+yarn add axios
