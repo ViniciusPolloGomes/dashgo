@@ -6,39 +6,13 @@ import { Pagination } from '../../components/Pagination';
 import { SideBar } from '../../components/SideBar';
 import Link from 'next/link';
 
-import {useQuery} from 'react-query'
-import { api } from '../../services/api';
+import { useUsers } from '../../services/hooks/useUsers';
 
 
 export default function UserList(){
 
-    const {data,isLoading, isFetching, error} = useQuery('users', async ()=>{            //criar a chave exige o nome para salvar no cache onde irar salvar, e o método
-        
-        // COM FETCH
-        // const response = await  fetch('http://localhost:3000/api/users')
-        //const data = await response.json()
-
-        //COM AXIOS
-        const {data} = await api.get('users')
-
-        const users = data.users.map(user => {
-            return{
-                id: user.id,
-                name: user.name,
-                email: user.email,
-                createdAt : new Date(user.createAt).toLocaleDateString('pt-BR',{
-                    day: '2-digit',
-                    month:'long',
-                    year:'numeric'
-                })
-            };
-        });
-
-        return users;
-    },{
-        staleTime:1000*10 // 5 sec
-    }) 
-
+    const {data,isLoading, isFetching, error} = useUsers();
+    
     const isWideVersion = useBreakpointValue({
         base:false,
         lg:true,

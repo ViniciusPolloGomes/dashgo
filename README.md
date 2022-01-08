@@ -182,6 +182,8 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 
 #### Construindo aplicação
 - Sinalizando refetch dos dados
+- Configurando Axios
+- Criando hook de listagem
 
 sera atualizada essa lista conforme estou desenvolvendo..
 
