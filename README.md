@@ -184,6 +184,8 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 - Sinalizando refetch dos dados
 - Configurando Axios
 - Criando hook de listagem
+- Lógica de paginação
+- Componente de paginação
 
 sera atualizada essa lista conforme estou desenvolvendo..
 

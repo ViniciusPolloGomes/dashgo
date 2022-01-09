@@ -1,4 +1,4 @@
-import {createServer,Factory, Model} from 'miragejs'
+import {createServer,Factory, Model,Response} from 'miragejs'
 import faker from 'faker';
 
 type User={
@@ -29,7 +29,7 @@ export function makeServer(){
         },
         
         seeds(server){ //criar dados assim que servidor for iniciado
-            server.createList('user',10);
+            server.createList('user',200);
         },
 
         routes(){
@@ -37,7 +37,23 @@ export function makeServer(){
 
             this.timing= 750; //delay para tentar tratar casos de tempo de resposta....
 
-            this.get('/users'); //mirage busca os dados de usuarios automatico
+            this.get('/users', function(schema, request){
+                const {page = 1 , per_page = 10} = request.queryParams
+
+                const total= schema.all('user').length
+
+                const pageStart =(Number(page)-1) * Number(per_page);
+                const pageEnd= pageStart + Number(per_page);
+
+                const users = this.serialize(schema.all('user')).users.slice(pageStart,pageEnd)
+
+                return new Response(
+                    200,
+                    {'x-total-count': String(total)},
+                    {users}
+                )
+            }); //mirage busca os dados de usuarios automatico
+            
             this.post('/users');  //envia usuarios automaticamente no banco de da dos
             
             this.namespace='';
