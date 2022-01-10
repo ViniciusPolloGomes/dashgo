@@ -1,20 +1,29 @@
-import{Stack,Box,Button,Text} from '@chakra-ui/react'
+import{Stack,Box,Button,Text,Flex} from '@chakra-ui/react'
 import { PaginationItem } from './PaginationItem';
 
 interface paginationProps{
-    totalCountOfRegisters: number;
-    registersPerPage?: number;
-    currentPage?: number;
-    onPageChange: (page:number) => void;
+    totalCountOfRegisters: number;    //numero total de registros 
+    registersPerPage?: number;        //registros por pagina desejados, esta como opcional.
+    currentPage?: number;             //pagina atual
+    onPageChange: (page:number) => void; //o que acontece quando pagina mudar
 }
 
-const siblingsCount = 1 ;
+const siblingsCount = 1 ; // 1... 4 5 6 ...20 exemplo paginação. paginas irmãs       
 
-function generatePageArray(from: number,to: number){
-    return [...new Array(to-from)]
+// Afunção dois parametros, apartir_de(from)  e  para(to) 2 e 5
+// retorna um array em branco de 5-2 = 3 posições
+//vamos caminhar por cada posição desse array com func map
+// p valor não importa _, pegaremos apenas index dessas posições
+// depois preenchemos o array com from + index + 1
+//[0,0,0]
+//[from + index +1]
+//[2+0+1, 2+1+1,2+2+1]
+//[3,4,5]
+function generatePageArray(from: number,to: number){ 
+    return [...new Array(to-from)] 
     .map((_,index)=>{
         return from + index + 1;
-    })
+    }) 
     .filter(page => page > 0)
 }
 
@@ -22,14 +31,14 @@ export function Pagination(
     {totalCountOfRegisters,
     registersPerPage =10,
     currentPage = 1, 
-    onPageChange
+    onPageChange,
     } : paginationProps) {
 
-        const lastPage = Math.ceil(totalCountOfRegisters/ registersPerPage);
-
+        const lastPage = Math.round(totalCountOfRegisters/ registersPerPage);
+        
         const previousPages = currentPage > 1 
         ? generatePageArray(currentPage - 1 - siblingsCount, currentPage - 1 )
-        :[]
+         :[]
 
         const nextPages = currentPage < lastPage
         ?generatePageArray(currentPage, Math.min(currentPage + siblingsCount, lastPage))
@@ -41,17 +50,13 @@ export function Pagination(
             justify="space-between"
             align="center"
             spacing="6">
-            <Box fontSize={["sm","sm"]}>
-                <strong>
-                    {currentPage * registersPerPage - registersPerPage + 1}
-                </strong> - 
-                <strong>
-                     {currentPage === lastPage ? totalCountOfRegisters : registersPerPage * currentPage}
-                </strong> de
-                 <strong>
-                    {totalCountOfRegisters}
-                </strong>
-            </Box>
+            <Flex fontSize={["sm","sm"]}>
+                <Text mx="1"> {currentPage * registersPerPage - registersPerPage +1}</Text>
+                <Text mx="1"> - </Text>
+                <Text mx="1">{currentPage * registersPerPage }</Text>
+                <Text mx="1"> de </Text>
+                <Text mx="1"> {totalCountOfRegisters}</Text>
+            </Flex>
             <Stack
                 direction="row"
                 spacing="2"
@@ -59,13 +64,15 @@ export function Pagination(
                 {currentPage > (1+ siblingsCount) && (
                     <>
                         <PaginationItem number={1} />
-                        {currentPage > (2 + siblingsCount) &&<Text color="gray.300" width="8" textAlign="center">...</Text>}
+                        {currentPage > (2 + siblingsCount) &&
+                        <Text color="gray.300" width="8" textAlign="center">...</Text>}
                     </>
                 )}
 
                 {previousPages.length > 0 && previousPages.map(page =>{
                     return <PaginationItem key={page} number={page} />
                 })}
+                
                 <PaginationItem number={currentPage} isCurrent />
                 
                 {nextPages.length > 0 && nextPages.map(page =>{
@@ -74,7 +81,8 @@ export function Pagination(
 
                 {(currentPage + siblingsCount) < lastPage && (
                     <>
-                        {(currentPage +1 + siblingsCount) < lastPage &&<Text color="gray.300" width="8" textAlign="center">...</Text>}
+                        {(currentPage +1 + siblingsCount) < lastPage &&
+                        <Text color="gray.300" width="8" textAlign="center">...</Text>}
                         <PaginationItem number={lastPage} />
                     </>
                 )}

@@ -58,7 +58,6 @@ export default function UserList(){
                                  </Th>
                                  <Th>Usuário</Th>
                                  {isWideVersion && <Th>Data de Cadastro</Th>}
-                                 
                              </Tr>
                          </Thead>
                          <Tbody>
@@ -83,7 +82,7 @@ export default function UserList(){
                         </Table>
                         <Pagination
                             totalCountOfRegisters={200}
-                            currentPage={5}
+                            currentPage={1}
                             onPageChange={()=>{}} />
                         </>
                      )}
