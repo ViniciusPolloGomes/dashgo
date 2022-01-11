@@ -8,6 +8,7 @@ const Chart = dynamic(()=> import('react-apexcharts'), {
     ssr:false,
 })
 
+//configuração apexcharts
 const options: Props ={
     chart:{
         toolbar:{
