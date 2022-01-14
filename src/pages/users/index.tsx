@@ -7,7 +7,9 @@ import { SideBar } from '../../components/SideBar';
 import Link from 'next/link';
 import {useState} from 'react'
 import { useUsers } from '../../services/hooks/useUsers';
-
+import {Link as LinkChakra} from '@chakra-ui/react'
+import { queryClient } from './../../services/queryClient';
+import { api } from '../../services/api';
 
 export default function UserList(){
 
@@ -18,6 +20,16 @@ export default function UserList(){
         base:false,
         lg:true,
     })
+
+    async function handlePrefetchUser(userId: number){
+        await queryClient.prefetchQuery(['user',userId], async () =>{
+            const response = await api.get(`users/${userId}`)
+
+            return response.data;
+        } ,{
+            staleTime: 1000 * 60 * 10,
+        })
+    }
 
     return(
         <Box>
@@ -70,7 +82,9 @@ export default function UserList(){
                                         </Td>
                                         <Td px={["4","4","6"]}>
                                             <Box>
-                                                <Text fontWeight="bold">{user.name}</Text>
+                                                <LinkChakra color="purple.400" onMouseEnter={()=>{handlePrefetchUser(user.id)}}>
+                                                    <Text fontWeight="bold">{user.name}</Text>
+                                                </LinkChakra>
                                                 <Text fontSize="sm" color="gray.300">{user.email}</Text>
                                             </Box>    
                                         </Td>

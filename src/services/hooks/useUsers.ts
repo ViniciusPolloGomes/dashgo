@@ -2,7 +2,7 @@ import { useQuery } from 'react-query';
 import { api } from '../api';
 
 type User = {
-    id:string;
+    id:number;
     name: string;
     email:string;
     createdAt:string;
@@ -13,7 +13,7 @@ type GetUsersResponse = {
     users: User[];
 
 }
-export async function getUsers(page: number) : Promise<User[GetUsersResponse]>{
+export async function getUsers(page: number) : Promise<GetUsersResponse>{
         // COM FETCH
         // const response = await  fetch('http://localhost:3000/api/users')
         //const data = await response.json()

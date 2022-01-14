@@ -186,6 +186,8 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 - Criando hook de listagem
 - Lógica de paginação
 - Componente de paginação
+- Trocando de página
+- Prefetch de dados
 
 sera atualizada essa lista conforme estou desenvolvendo..
 

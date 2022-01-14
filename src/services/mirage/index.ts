@@ -54,8 +54,10 @@ export function makeServer(){
                 )
             }); //mirage busca os dados de usuarios automatico
             
+            this.get('/users/:id');
             this.post('/users');  //envia usuarios automaticamente no banco de da dos
             
+
             this.namespace='';
             this.passthrough()   //todas as chamadas para endereço api passem pelo mirage, caso não sejam detectadas pelas rotas do mirage, elas passam adiante para rotas original delas, ou pagina e função disponivel..
         }
