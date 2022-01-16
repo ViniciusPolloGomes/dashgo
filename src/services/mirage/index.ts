@@ -13,6 +13,8 @@ export function makeServer(){
             user: Model.extend<Partial<User>>({})    //modelo usuarios do tipo User podendo conter parcialmente as mesmas variaveis.
         },
 
+        //serialize
+
         factories:{ //conceito para gerar dados em massa
             user: Factory.extend({
                 name(i){
