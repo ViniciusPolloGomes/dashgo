@@ -1,4 +1,4 @@
-import { useQuery } from 'react-query';
+import { useQuery, UseQueryOptions } from 'react-query';
 import { api } from '../api';
 
 type User = {
@@ -46,9 +46,10 @@ export async function getUsers(page: number) : Promise<GetUsersResponse>{
         };
 }
 
-export function useUsers(page: number){
+export function useUsers(page: number , options: UseQueryOptions){
     return useQuery(['users',page], () => getUsers(page),{    //criar a chave exige o nome para salvar no cache onde irar salvar, e o método
-        staleTime:1000*10 // 5 sec
+        staleTime:1000*10, // 5 sec
+        ...options,
     } ) 
 }
 
