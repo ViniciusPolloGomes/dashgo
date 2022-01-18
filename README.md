@@ -188,6 +188,8 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 - Componente de paginação
 - Trocando de página
 - Prefetch de dados
+- Utilizando mutations
+- SSR no React Query
 
 sera atualizada essa lista conforme estou desenvolvendo..
 
