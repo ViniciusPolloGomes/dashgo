@@ -191,6 +191,8 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 - Utilizando mutations
 - SSR no React Query
 
+#### Autenticação e autorização
+
 sera atualizada essa lista conforme estou desenvolvendo..
 
 #### Comandos de criação e instalações de pacotes no projeto.
