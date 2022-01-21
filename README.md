@@ -192,7 +192,8 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 - SSR no React Query
 
 #### Autenticação e autorização
--JWT
+- JWT
+- REST FULL
 
 sera atualizada essa lista conforme estou desenvolvendo..
 
