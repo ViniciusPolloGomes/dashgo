@@ -193,7 +193,7 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 
 #### Autenticação e autorização
 - JWT
-- REST FULL
+- REST FULL (Projeto paralelo de teste [ignite-reactjs-auth-backend](https://github.com/rocketseat-education/ignite-reactjs-auth-backend)).
 
 sera atualizada essa lista conforme estou desenvolvendo..
 
